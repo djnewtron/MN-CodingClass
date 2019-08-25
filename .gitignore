@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ExamplesFromBlair/.vs
+/ExamplesFromBlair/Pipes-1/bin/Debug
+/ExamplesFromBlair/Pipes-1/obj/Debug
