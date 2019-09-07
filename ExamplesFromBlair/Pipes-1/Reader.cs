@@ -22,10 +22,26 @@ namespace Pipes
         public void DoSomething()
         {
             // I copy each line of text to the console, then exit when there is no more.
-            for (; ; )
+            //for (; ; )
+            //{
+            //    //var throwaway = _AppDomain == null
+            //    //    ? "What!?"
+            //    //    : _in == null
+            //    //        ? "Not cool"
+            //    //        : "Cool";
+            //    var line = _in.ReadLine();
+            //    if (line == null) { return; }
+            //    Console.WriteLine(line);
+            //}
+
+            var lines = new List<string>();
+            for (var line = _in.ReadLine(); line != null; line = _in.ReadLine())
             {
-                var line = _in.ReadLine();
-                if (line == null) { return; }
+                lines.Add(line);
+            }
+            lines.Reverse();
+            foreach (var line in lines)
+            {
                 Console.WriteLine(line);
             }
         }
